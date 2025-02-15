@@ -4,15 +4,23 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Project 10</title>
+    <title>Image Search</title>
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
+
   <body>
-    <main>
-      <ul class="pages">
-        <li class="name-page"><a href="./1-timer.html">Timer</a></li>
-        <li class="name-page"><a href="./2-snackbar.html">Snackbar</a></li>
-      </ul>
-    </main>
+    <form class="form">
+      <input type="text" class="form-input" placeholder="Search images..." />
+      <button type="submit" class="sub-btn">Search</button>
+    </form>
+
+    <ul class="gallery"></ul>
+
+    <div class="loader hidden">
+      <span class="loading"> </span>
+      Loading images, please wait......
+    </div>
+
+    <script type="module" src="./main.js"></script>
   </body>
 </html>
